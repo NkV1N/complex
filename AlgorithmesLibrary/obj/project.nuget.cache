@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "poggUJkokMKglQuZZl7Tgy0/HbQ2PjZIszcymRNqADq5u4r3W/FXXXtQn+warnRua09mnfrM0qeiXOzCF0ui0A==",
+  "success": false,
+  "projectFilePath": "D:\\Projects\\Temp\\EncryptApp\\AlgorithmesLibrary\\AlgorithmesLibrary.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект EncryptApp несовместим с net6.0 (.NETCoreApp,Version=v6.0). Проект EncryptApp поддерживает: net6.0-windows7.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "EncryptApp",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

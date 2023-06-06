@@ -1,0 +1,89 @@
+﻿<Window x:Class="EncryptApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EncryptApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="900"
+        ResizeMode="NoResize">
+    <Grid Background="#F5F5F5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Text="EncryptApp"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Foreground="#444"
+                   FontSize="22"
+                   Margin="20 0 0 0"/>
+
+        <StackPanel Grid.Row="1" Background="#F5F5F5">
+            <RadioButton Content="Главная"
+                         Height="50"
+                         FontSize="14"
+                         x:Name="mainButton"
+                         Style="{StaticResource MenuButtonTheme}"
+                         Checked="mainButton_Checked"/>
+            <RadioButton Content="Шифр Цезаря"
+                         Height="50"
+                         FontSize="14"
+                         x:Name="cezarButton"
+                         Style="{StaticResource MenuButtonTheme}"
+                         Checked="cezarButton_Checked"/>
+            <RadioButton Content="Метод простой подстановки"
+                         Height="50"
+                         FontSize="14"
+                         x:Name="simpleButton"
+                         Style="{StaticResource MenuButtonTheme}"
+                         Checked="simpleButton_Checked"/>
+            <RadioButton Content="Метод сложной подстановки"
+                         Height="50"
+                         FontSize="14"
+                         x:Name="complexButton"
+                         Style="{StaticResource MenuButtonTheme}"
+                         Checked="complexButton_Checked"/>
+            <RadioButton Content="Метод Штирлица"
+                         Height="50"
+                         FontSize="14"
+                         x:Name="stirlitzButton"
+                         Style="{StaticResource MenuButtonTheme}"
+                         Checked="stirlitzButton_Checked"/>
+            <RadioButton Content="Метод Виженера"
+                         Height="50"
+                         FontSize="14"
+                         x:Name="visionaryButton"
+                         Style="{StaticResource MenuButtonTheme}"
+                         Checked="visionaryButton_Checked"/>
+            <RadioButton Content="ASCII-код"
+                         Height="50"
+                         FontSize="14"
+                         x:Name="asciiButton"
+                         Style="{StaticResource MenuButtonTheme}"
+                         Checked="asciiButton_Checked"/>
+            <RadioButton Content="Номер в алфавите"
+                         Height="50"
+                         FontSize="14"
+                         x:Name="alphabetButton"
+                         Style="{StaticResource MenuButtonTheme}"
+                         Checked="alphabetButton_Checked"/>
+            <RadioButton Content="По раскладке клавиатуры"
+                         Height="50"
+                         FontSize="14"
+                         x:Name="keyboerdButton"
+                         Style="{StaticResource MenuButtonTheme}"
+                         Checked="keyboerdButton_Checked"/>
+        </StackPanel>
+
+        <Frame Grid.Column="1" x:Name="frameView"
+               Grid.RowSpan="2" Margin="15"
+               NavigationUIVisibility="Hidden"/>
+
+    </Grid>
+</Window>
